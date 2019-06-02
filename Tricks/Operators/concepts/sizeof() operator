@@ -1,0 +1,14 @@
+- When sizeof() is used with the data types, it simply returns the amount of
+  memory allocated to that data type.
+  e.g int a; sizeof(a);
+  e.g sizeof(char);
+    - The output can be different on different machines like a 32-bit system
+      can show different output while a 64-bit system can show different of
+      same data types.
+
+- When the sizeof() is used with an expression, it returns the size of the
+  expression.
+  e.g sizeof(a+b);
+
+- link:
+    https://www.tutorialspoint.com/sizeof-operator-in-c

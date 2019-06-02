@@ -1,0 +1,9 @@
+- The following rule apply to a switch statement:
+    - The expression used in a switch statement must have an integral or
+      enumerated type, or be of a class type in which the class has a
+      single conversion function to an integral or enumerated type.
+
+
+- link:
+    https://www.tutorialspoint.com/cprogramming/switch_statement_in_c.htm
+    

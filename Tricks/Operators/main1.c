@@ -1,15 +1,6 @@
 #include <stdio.h>
 
 int main() {
-	/* C Operator Precedence
-		
-		Operator  Associativity 
-	--> * / %
-	--> + -			Left-to-right 
-	--> << >>
-
-	*/
-
-	printf("%d", 1 << 2 + 3 << 4); // output: 512
+	printf("%d", 1 << 2 + 3 << 4); // 512, because of C percedence
 	return 0;
 }

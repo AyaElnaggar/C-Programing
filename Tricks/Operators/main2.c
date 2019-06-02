@@ -1,29 +1,9 @@
 #include <stdio.h>
 
 int main() {
-	/*	
-				C Operator Precedence
-			operators		   Associativity
-		--> * / %
-		--> + -
-		--> << >>
-		--> < <= > >=
-		--> == !=
-		--> &                  left-to-right
-		--> ^
-		--> |
-		--> &&
-		--> ||
-
-		--> ?:                 right-to-left
-		--> =, +=, -=,
-			*=, /=, %=,
-			<<=, >>=, &=,
-			^=, |= 
-	*/
 
 	int x, y = 5, z = 5;
-	x = y == z; // output: 1
+	x = y == z; // 1, because of C percedence
 	printf("%d", x);
 
 	return  0;
