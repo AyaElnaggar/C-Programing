@@ -10,7 +10,7 @@ typedef double f64;
 typedef long double f128;
 
 void getInputs(f64 *num, int32 *power);
-long double getPower(f64 num, int32 power);
+f128 getPower(f64 num, int32 power);
 void showRes(f128 res);
 
 int main(){
@@ -18,7 +18,7 @@ int main(){
     int32 power;
 
     getInputs(&num, &power);
-    double res = getPower(num,power);
+    f64 res = getPower(num,power);
     showRes(res);
 
     return 0;
@@ -31,8 +31,8 @@ void getInputs(f64 *num, int32 *power){
     scanf("%d", power);
 }
 
-long double getPower(f64 num, int32 power){
-    static long double res=1;
+f128 getPower(f64 num, int32 power){
+    static f128 res=1;
 
     if(power<0){
         //change num, power
