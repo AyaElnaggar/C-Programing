@@ -4,13 +4,18 @@
 
 #include <stdio.h>
 
-void getInputs(double *num, int *power);
-long double getPower(double num, int power);
-void showRes(long double res);
+typedef int int32;
+typedef float f32;
+typedef double f64;
+typedef long double f128;
+
+void getInputs(f64 *num, int32 *power);
+long double getPower(f64 num, int32 power);
+void showRes(f128 res);
 
 int main(){
-    double num;
-    int power;
+    f64 num;
+    int32 power;
 
     getInputs(&num, &power);
     double res = getPower(num,power);
@@ -19,14 +24,14 @@ int main(){
     return 0;
 }
 
-void getInputs(double *num, int *power){
+void getInputs(f64 *num, int32 *power){
     printf("enter num: \n");
     scanf("%lf", num);
     printf("enter power: \n");
     scanf("%d", power);
 }
 
-long double getPower(double num, int power){
+long double getPower(f64 num, int32 power){
     static long double res=1;
 
     if(power<0){
@@ -48,6 +53,6 @@ long double getPower(double num, int power){
     return res;
 }
 
-void showRes(long double res){
+void showRes(f128 res){
     printf("res: %Lf \n", res);
 }
